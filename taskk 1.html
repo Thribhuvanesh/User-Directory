@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Directory</h1>
+            <p>Search and sort through user data</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for users...">
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th data-sort="name">Name</th>
+                        <th data-sort="email">Email</th>
+                        <th data-sort="phone">Phone Number</th>
+                        <th data-sort="address">Address</th>
+                        <th data-sort="company">Company</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
